@@ -1,0 +1,24 @@
+{% extends 'food/base.html' %}
+
+
+{% block content %}
+
+<div class="container">
+    
+    <br>
+    {% if article.image %}
+    <img src="{{ article.image.url }}" alt=""  width="100%" height="500"/>
+    {% else %}
+    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt=""  width="100%" height="500"/>
+    {% endif %}
+    <br><br>
+    <h1 style="text-align: justify;">{{article.title}}</h1>
+    <hr>
+   
+    <p>{{article.post|safe}}</p>
+    <br>
+
+</div>
+
+
+{% endblock content %}

@@ -1,0 +1,26 @@
+{% extends 'food/base.html' %}
+
+
+{% block content %}
+
+<br>
+<div class="container">
+    <div class="jumbotron" style="background-color: #f1f1e8;">
+        <h1 class="display-4">Welcome to GymKhaana!</h1>
+        <p class="lead">Loved by gym freaks</p>
+        <hr class="my-4">
+        <p>Your one stop for everyday meal by certified trainers.</p>
+        <a class="btn btn-primary btn-lg" href="{% url 'productlist' %}" role="button">See our products!!</a>
+    </div>
+    <hr>
+</div>
+
+<div class="container">
+    <h2 style="text-align: center;">Introductry Video</h2>
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=1">
+    </iframe>
+    <br>
+    <br>
+</div>
+
+{% endblock content %}

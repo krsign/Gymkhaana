@@ -1,0 +1,1 @@
+web: gunicorn gymkhaana.wsgi --log-file -
